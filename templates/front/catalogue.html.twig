@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontController!{% endblock %}
+
+{% block body %}
+
+{% for product in products %}
+    <p>{{ product.name }}</p>
+    <p>{{ product.category.name }}</p>
+    <img src="images/{{ product.image }}" alt="{{ product.name }}" style="width:200px">
+    
+{% endfor %}
+
+{% endblock %}
