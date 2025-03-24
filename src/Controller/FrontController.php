@@ -42,4 +42,40 @@ class FrontController extends AbstractController
             'controller_name' => 'FrontController',
         ]);
     }
+
+    #[Route('/mariage', name: 'mariage')]
+    public function mariage(): Response
+    {
+        return $this->render('front/mariage.html.twig');
+    }
+
+    #[Route('/deuil', name: 'deuil')]
+    public function deuil(): Response
+    {
+        return $this->render('front/deuil.html.twig');
+    }
+
+    #[Route('/quotidien', name: 'quotidien')]
+    public function quotidien(): Response
+    {
+        return $this->render('front/quotidien.html.twig');
+    }
+
+    #[Route('/atelier', name: 'atelier')]
+    public function atelier(): Response
+    {
+        return $this->render('front/atelier.html.twig');
+    }
+
+    #[Route('/abonnement', name: 'abonnement')]
+    public function abonnement(): Response
+    {
+        return $this->render('front/abonnement.html.twig');
+    }
+
+    #[Route('/shop', name: 'shop')]
+    public function shop(): Response
+    {
+        return $this->render('front/shop.html.twig');
+    }
 }
