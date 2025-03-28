@@ -3,57 +3,138 @@
 {% block title %}Fleuriste Roanne livraison de fleurs | Euphorie Florale{% endblock %}
 
 {% block body %}
-    <section class="banner">
-        <h1>Bienvenue sur notre site</h1>
-        <p>Découvrez nos services uniques et nos créations florales.</p>
-        <a href="{{ path('shop') }}" class="btn">Découvrir</a>
-    </section>
-
-    <section class="reassurance">
-        <div>
-            <p>Livraison à 3 euros dans tout le Roannais, à Amplepuis et Tarare remise en mains propre par votre fleuriste.</p>
+    <section class="banner text-center py-5"
+        style="background: url('{{ asset('assets/img/banner.jpg') }}') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="section-heading mb-4" style="
+                text-shadow: 
+                    -1px -1px 0 white, 
+                    1px -1px 0 white, 
+                    -1px 1px 0 white, 
+                    1px 1px 0 white;">
+                <span class="section-heading-upper">
+                    Bienvenue sur le site d'Euphorie Florale
+                </span>
+                <br>
+                <span class="section-heading-lower">
+                    Découvrez nos services uniques et nos créations florales
+                </span>
+            </h1>
+            <a href="{{ path('shop') }}" class="btn btn-primary btn-lg">Découvrir</a>
         </div>
-        <div>
-            <p>Des fleurs fraîches sélectionnées chaque matin spécialement pour votre commande. (Passez commande 24h en avance minimum).</p>
+    </section>
+
+    <section class="reassurance py-5 text-center">
+        <div class="container"> <!-- Place la classe container ici -->
+            <div class="row justify-content-center"> <!-- Assure l'alignement -->
+                <div class="col-md-4">
+                    <img src="/assets/img/livraison.png" alt="Livraison" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>Livraison à 3 euros dans tout le Roannais, à Amplepuis et Tarare remise en mains propre par votre fleuriste.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/img/fraiches.png" alt="Livraison" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>Des fleurs fraîches sélectionnées chaque matin spécialement pour votre commande. (Passez commande 24h en avance minimum).</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/img/discussion.png" alt="Livraison" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>Votre fleuriste disponible et réactive 7j/7, de 9h à 19h du lundi au samedi. Et de 9h à 13h le dimanche.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Votre fleuriste disponible et réactive 7j/7, de 9h à 19h du lundi au samedi. Et de 9h à 13h le dimanche.</p>
+    </section>
+
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/about.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Fleuriste Roanne - Un Atelier de Création Florale</span>
+                    </h2>
+                    <h4 class="font-italic">Euphorie Florale, Créatrice d'ambiance pour tous vos événements.</h4>
+                    <p class="mb-3">Mélodie, fleuriste depuis 2020 et diplômée dans l'organisation événementielle depuis 2017, je souhaite aujourd'hui lier mes deux expertises afin de vous proposer des arrangements floraux qui accompagneront aussi bien vos moments du quotidien ou pour venir sublimer un évènement unique. Je propose des livraisons quotidiennes à Roanne et ses environs, mais je suis présente pour tous vos évènements dans la région Auvergne Rhône-Alpes.</p>
+                    <a href="{{ path('shop') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about">
-        <h2>Fleuriste Roanne – Un Atelier de Création Florale Unique</h2>
-        <h3><em>Euphorie Florale, Créatrice d'ambiance pour tous vos événements.</em></h3>
-        <p>Mélodie, fleuriste depuis 2020 et diplômée dans l'organisation événementielle depuis 2017, je souhaite aujourd'hui lier mes deux expertises afin de vous proposer des arrangements floraux qui accompagneront aussi bien vos moments du quotidien ou pour venir sublimer un évènement unique. Je propose des livraisons quotidiennes à Roanne et ses environs, mais je suis présente pour tous vos évènements dans la région Auvergne Rhône-Alpes.</p>
+    <div class="standalone-title text-center">
+        <h2>L'atelier floral vous accompagne pour…</h2>
+    </div>
+
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/mariage.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Sublimer votre mariage</span>
+                    </h2>
+                    <p class="mb-3">Chaque mariage est unique et mérite des arrangements floraux à la hauteur de vos rêves et de vos envies. Les fleurs subliment chaque instant, apportant une touche d’élégance et d’émotion à votre grand jour. Chez Euphorie Florale, je mets mon savoir-faire en art floral au service de votre union en créant des compositions sur mesure, adaptées à votre thème et à vos couleurs. Du bouquet de mariée raffiné à la majestueuse arche florale pour votre cérémonie, chaque détail est pensé pour magnifier votre décor et raconter votre histoire d’amour à travers les fleurs. Confiez-moi vos envies florales, et laissez la beauté des fleurs raconter votre histoire d'amour.</p>
+                    <a href="{{ path('mariage') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="mariage">
-        <h2>Sublimer votre mariage</h2>
-        <p>Chaque mariage est unique et mérite des arrangements floraux à la hauteur de vos rêves et de vos envies. Les fleurs subliment chaque instant, apportant une touche d’élégance et d’émotion à votre grand jour. Chez Euphorie Florale, je mets mon savoir-faire en art floral au service de votre union en créant des compositions sur mesure, adaptées à votre thème et à vos couleurs. Du bouquet de mariée raffiné à la majestueuse arche florale pour votre cérémonie, chaque détail est pensé pour magnifier votre décor et raconter votre histoire d’amour à travers les fleurs. Confiez-moi vos envies florales, et laissez la beauté des fleurs raconter votre histoire d'amour.</p>
-        <a href="{{ path('mariage') }}" class="btn">Découvrir</a>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/deuil.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Vos derniers hommages</span>
+                    </h2>
+                    <p class="mb-3">Exprimer son soutien et son affection lors d’un moment de deuil passe souvent par l’envoi de fleurs. En tant que fleuriste spécialisé sur Roanne, nous vous accompagnons avec des compositions florales élégantes et respectueuses pour rendre hommage à un être cher. Que ce soit pour une cérémonie, une sépulture ou un geste de réconfort, nous proposons un large choix de gerbes, couronnes, bouquets etc... adaptés à ces instants de recueillement. Profitez de notre service de livraison à Roanne et ses environs, rapide et soigné, afin d’envoyer vos fleurs directement au domicile de la famille, à l’église ou au funérarium.</p>
+                    <a href="{{ path('deuil') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="deuil">
-        <h2>Vos derniers hommages</h2>
-        <p>Exprimer son soutien et son affection lors d’un moment de deuil passe souvent par l’envoi de fleurs. En tant que fleuriste spécialisé sur Roanne, nous vous accompagnons avec des compositions florales élégantes et respectueuses pour rendre hommage à un être cher. Que ce soit pour une cérémonie, une sépulture ou un geste de réconfort, nous proposons un large choix de gerbes, couronnes, bouquets etc... adaptés à ces instants de recueillement. Profitez de notre service de livraison à Roanne et ses environs, rapide et soigné, afin d’envoyer vos fleurs directement au domicile de la famille, à l’église ou au funérarium.</p>
-        <a href="{{ path('deuil') }}" class="btn">Découvrir</a>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/quotidien.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Vos évènements du quotidien</span>
+                    </h2>
+                    <p class="mb-3">Pour ajouter une touche de fraîcheur à votre quotidien ou offrir des fleurs, découvrez ma sélection de bouquets et compositions florales réalisés avec soin à partir de fleurs fraîches ou séchées. Profitez de notre service de livraison à domicile ou sur votre lieu de travail à Roanne et ses environs pour surprendre vos proches. Que ce soit pour un anniversaire ou toute autre occasion spéciale, nos créations florales sont parfaites pour transmettre vos émotions avec élégance. Pensez à passer commande la veille au plus tard afin de garantir la meilleure qualité, les fleurs fraîches sont sélectionnées le matin même de la commande. Je réalise également des compositions sur-mesure, adaptées à vos envies. Pour une commande personnalisée, n’hésitez pas à me contacter directement.</p>
+                    <a href="{{ path('shop') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="quotidien">
-        <h2>Vos évènements du quotidien</h2>
-        <p>Pour ajouter une touche de fraîcheur à votre quotidien ou offrir des fleurs, découvrez ma sélection de bouquets et compositions florales réalisés avec soin à partir de fleurs fraîches ou séchées. Profitez de notre service de livraison à domicile ou sur votre lieu de travail à Roanne et ses environs pour surprendre vos proches en toute occasion. Que ce soit pour un anniversaire ou toute autre occasion spéciale, nos créations florales sont parfaites pour transmettre vos émotions avec élégance. Pensez à passer commande la veille au plus tard afin de garantir la meilleure qualité, les fleurs fraîches sont sélectionnées le matin même de la commande. Je réalise également des compositions sur-mesure, adaptées à vos envies. Pour une commande personnalisée, n’hésitez pas à me contacter directement.</p>
-        <a href="{{ path('shop') }}" class="btn">Découvrir</a>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/atelier.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Un moment de partage</span>
+                    </h2>
+                    <p class="mb-3">Offrez-vous un moment créatif et convivial avec l'atelier d’art floral, une expérience unique autour des fleurs fraîches ou séchées. Que ce soit dans l'atelier basé à Fourneaux ou directement chez vous, nous vous guidons dans la réalisation de magnifiques arrangements floraux comme des couronnes, des bougies fleuries ou d’autres créations personnalisées. Parfait comme idée-cadeau, nos ateliers sont une belle occasion de célébrer un anniversaire, de partager un instant complice en duo parent/enfant ou d’organiser un enterrement de vie de jeune fille/garçon original. Nous proposons également des ateliers thématiques selon la saison, comme des décorations florales pour Halloween ou Noël. Laissez libre cours à votre imagination et repartez avec votre création unique.</p>
+                    <a href="{{ path('atelier') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="atelier">
-        <h2>Un moment de partage</h2>
-        <p>Offrez-vous un moment créatif et convivial avec l'atelier d’art floral, une expérience unique autour des fleurs fraîches ou séchées. Que ce soit dans l'atelier basé à Fourneaux ou directement chez vous, nous vous guidons dans la réalisation de magnifiques arrangements floraux comme des couronnes, des bougies fleuries ou d’autres créations personnalisées. Parfait comme idée-cadeau, nos ateliers sont une belle occasion de célébrer un anniversaire, de partager un instant complice en duo parent/enfant ou d’organiser un enterrement de vie de jeune fille/garçon original. Nous proposons également des ateliers thématiques selon la saison, comme des décorations florales pour Halloween ou Noël. Laissez libre cours à votre imagination et repartez avec votre création unique.</p>
-        <a href="{{ path('atelier') }}" class="btn">Découvrir</a>
-    </section>
-
-    <section class="abonnement">
-        <h2>Garder un environnement fleuri</h2>
-        <p>Avec le service d'abonnement floral, que vous soyez un particulier ou un professionnel, je vous propose des formules flexibles, adaptées à vos préférences en termes de fréquence et de budget. Ce service permet d'apporter une touche florale à votre intérieur, celui d'un proche ou encore d'accueillir vos clients avec élégance avec des arrangements floraux qui évoluent au fil des saisons. Ces abonnements vous garantissent des créations sur mesure, livrées à l'endroit de votre choix.</p>
-        <a href="{{ path('abonnement') }}" class="btn">Découvrir</a>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/abonnement.jpg" alt="Fleuriste en action" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Garder un environnement fleuri</span>
+                    </h2>
+                    <p class="mb-3">Avec le service d'abonnement floral, que vous soyez un particulier ou un professionnel, je vous propose des formules flexibles, adaptées à vos préférences en termes de fréquence et de budget. Ce service permet d'apporter une touche florale à votre intérieur, celui d'un proche ou encore d'accueillir vos clients avec élégance avec des arrangements floraux qui évoluent au fil des saisons. Ces abonnements vous garantissent des créations sur mesure, livrées à l'endroit de votre choix.</p>
+                    <a href="{{ path('abonnement') }}" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+        </div>
     </section>
 {% endblock %}
