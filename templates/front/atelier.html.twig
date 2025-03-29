@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Abonnement Floral{% endblock %}
+
+{% block body %}
+
+    <section class="banner text-center py-5"
+        style="background: url('{{ asset('assets/img/banner.jpg') }}') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="section-heading mb-4" style="
+                text-shadow: 
+                    -1px -1px 0 white, 
+                    1px -1px 0 white, 
+                    -1px 1px 0 white, 
+                    1px 1px 0 white;">
+                <span class="section-heading-upper">
+                    Bienvenue sur le site d'Euphorie Florale
+                </span>
+                <br>
+                <span class="section-heading-lower">
+                    Découvrez nos services uniques et nos créations florales
+                </span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="reassurance py-5 text-center">
+        <div class="container"> <!-- Place la classe container ici -->
+             <!-- Titre amélioré -->
+            <span class="section-heading-upper d-block mb-3">
+                <h1 class="section-heading-lower">Initiez-vous à l'art des fleurs</h1>
+            </span>
+            
+            <!-- Paragraphe principal avec meilleure lisibilité -->
+            <p class="lead mb-5">
+                Le temps d’un après-midi ou d’une soirée, venez partager un moment convivial lors d'un cours d'art floral. Une expérience unique autour des fleurs fraîches ou séchées. Que ce soit dans l'atelier basé à Fourneaux ou directement chez vous, laissez libre cours à votre imagination et repartez avec votre création unique.
+            </p>
+            <div class="row justify-content-center"> <!-- Assure l'alignement -->
+                <div class="col-md-4">
+                    <img src="/assets/img/temps.png" alt="1h30 à 2h de cours" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>Des cours allant de 1h30 à 2h00, incluant une petite pause gourmande afin de booster votre créativité.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/img/groupe.png" alt="Petit groupe" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>En petit comité pour que l'instructeur puisse être disponible et à l'écoute de toutes vos interrogations.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/img/materiel.png" alt="Matériel fourni" class="mb-3" style="width: 75px; height: 75px;">
+                    <p>Je fournis le matériel ainsi que les fleurs dont vous aurez besoin pour l'atelier choisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deuxième section : Offrir un atelier comme cadeau -->
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <div class="intro-text right-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Offrez un Cours Floral : Un Cadeau Unique</span>
+                    </h2>
+                    <p class="mb-3">
+                        Vous cherchez une idée originale et créative pour un cadeau spécial ? Offrez un cours d'atelier floral ! Que ce soit pour un anniversaire, la fête des mères, un enterrement de vie de jeune fille ou de garçon, ou même pour célébrer un moment unique, un atelier floral est une expérience inoubliable qui allie détente, créativité et beauté.
+                    </p>
+                    <p class="mb-3">
+                        Offrez un moment de détente et de plaisir, une expérience florale parfaite pour toute personne passionnée de fleurs ou simplement pour se faire plaisir.
+                    </p>
+                </div>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/cadeau.jpg" alt="Offrir un atelier floral" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Troisième section : Fleurs séchées -->
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/seche.jpg" alt="Fleurs séchées" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Découvrez l'Art des Fleurs Séchées</span>
+                    </h2>
+                    <p class="mb-3">
+                        Plongez dans l'univers des fleurs séchées et réalisez des créations originales comme des bougies parfumées, des couronnes florales ou des cloches décoratives. Ces ateliers créatifs vous permettent de personnaliser vos pièces tout en apprenant des techniques artisanales. Idéal pour ajouter une touche naturelle et durable à votre intérieur ou à vos événements.
+                    </p>
+                    <p class="mb-3">
+                        Rejoignez-nous pour un moment de créativité et repartez avec une œuvre florale unique à conserver.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quatrième section : Ateliers à thèmes -->
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <div class="intro-text right-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Ateliers à Thèmes : Halloween, Noël et Plus</span>
+                    </h2>
+                    <p class="mb-3">
+                        Nous organisons des ateliers à thématique pour célébrer des moments uniques comme Halloween ou Noël ! Pour Halloween, créez des compositions florales originales avec des fleurs séchées et des éléments automnaux, parfaites pour une touche mystérieuse dans votre décoration.
+                    </p>
+                    <p class="mb-3">
+                        En Noël, préparez-vous à créer des couronnes de Noël personnalisées pour décorer votre maison ou offrir en cadeau. Ces ateliers ajoutent une touche artisanale et florale à vos célébrations tout en créant des souvenirs mémorables.
+                    </p>
+                </div>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/assets/img/theme.jpg" alt="Atelier floral à thème" />
+            </div>
+        </div>
+    </section>
+{% endblock %}
